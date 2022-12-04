@@ -1,0 +1,8 @@
+<div class="acerca_de_mi"><h3>Acerca de mi</h3>
+    <div class="descripcion" *ngFor="let info of informacion">{{info.descripcion}}
+      <button data-bs-toggle="modal" data-bs-target="#infoModal" data-bs-whatever="@getbootstrap">
+    <i class="fa-sharp fa-solid fa-pencil"></i>
+    </button>
+  </div>
+ </div>
+ <app-modal-acerca-de-mii></app-modal-acerca-de-mii>

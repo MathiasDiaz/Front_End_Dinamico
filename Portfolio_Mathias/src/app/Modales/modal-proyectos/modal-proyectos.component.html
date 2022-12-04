@@ -1,0 +1,110 @@
+<div class="modal fade" id="editarproyectos" tabindex="-1" aria-labelledby="editarproyectos" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="editarproyectos">Editar</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="form" (ngSubmit)="onEnviar($event)">
+              <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Titulo</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Titulo" formControlName="texto" [class.border-success]="textoV" [class.border-danger]="textoF">       
+                <p *ngIf="texto?.hasError('required')" class="error">
+                  Este campo es requerido
+              </p>
+              </div>
+              <p>imagen</p>
+          <input class="form-control" type="file" id="formFile"formControlName="texto7" [class.border-success]="texto7V" [class.border-danger]="texto7F">   
+          <p *ngIf="texto7?.hasError('required')" class="error">
+            Este campo es requerido
+            </p>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">URL</label>
+                <input type="url" class="form-control" id="formGroupExampleInput2" placeholder="URL de cualquier imagen"formControlName="texto1" [class.border-success]="textoV1" [class.border-danger]="textoF1">       
+                <p *ngIf="texto1?.hasError('required')" class="error">
+                  Este campo es requerido
+              </p>
+              </div>
+              <div class="input-group">
+                <span class="input-group-text">Despcripción</span>
+                <textarea class="form-control" aria-label="With textarea" formControlName="texto3" [class.border-success]="textoV3" [class.border-danger]="textoF3">       
+                  <p *ngIf="texto3?.hasError('required')" class="error">este campo es requerido</p>
+                  </textarea>
+              </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-info">Editar</button>
+        </div>
+        </form>
+    </div>
+  </div>
+  </div>
+  </div>
+  
+  <div class="modal fade" id="agregarproyectos" tabindex="-1" aria-labelledby="agregarproyectos" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="agregarproyectos">Agregar</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="forma" (ngSubmit)="onEnviarPes($event)"> 
+              <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Titulo</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Titulo"formControlName="texto4" [class.border-success]="textoV4" [class.border-danger]="textoF4">       
+                <p *ngIf="texto4?.hasError('required')" class="error">
+                  Este campo es requerido
+              </p>
+              </div>
+              <p>imagen</p>
+          <input class="form-control" type="file" id="formFile" formControlName="texto8" [class.border-success]="textoV8" [class.border-danger]="textoF8">   
+                  <p *ngIf="texto8?.hasError('required')" class="error">
+                    Este campo es requerido
+                </p>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Sitio web del proyecto</label>
+                <input type="url" class="form-control" id="formGroupExampleInput2" placeholder="Sitio Web"formControlName="texto5" [class.border-success]="textoV5" [class.border-danger]="textoF5">       
+                <p *ngIf="texto5?.hasError('required')" class="error">
+                  Este campo es requerido
+              </p>
+              </div>
+              <div class="input-group">
+                <span class="input-group-text">Despcripción</span>
+                <textarea class="form-control" aria-label="With textarea"formControlName="texto6" [class.border-success]="textoV6" [class.border-danger]="textoF6">       
+                  <p *ngIf="texto6?.hasError('required')" class="error">
+                    Este campo es requerido
+                </p></textarea>
+              </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-info">Agregar</button>
+        </div>
+        </form>
+    </div>
+  </div>
+  </div>
+  </div>
+  
+
+  
+<div class="modal fade" id="borrarproyectos" tabindex="-1" aria-labelledby="borrarproyectos" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="borrarproyectos">Borrar</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+               <div class="col-sm-10">
+                <input type="text" readonly class="form-control-plaintext" id="staticEmail"> 
+              ¿Seguro que desea eliminar este elemento?
+              </div> 
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger">Borrar</button>
+        </div>
+        </form>
+    </div>
+  </div>
+  </div>
+</div>

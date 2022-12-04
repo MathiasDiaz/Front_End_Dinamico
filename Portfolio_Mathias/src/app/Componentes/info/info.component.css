@@ -1,0 +1,26 @@
+.acerca_de_mi {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+    text-align: justify;
+    font-style:oblique;
+    background-color: lightblue;
+    border-width: 0.9rem;
+    border-style: solid;
+    border-color: black;
+}
+.acerca_de_mi > .descripcion{
+    margin-top: 3ex;
+    }
+.text-white{
+background-color: darkcyan;
+border-width: 0.4ex;
+border-style: solid;
+border-color: gray;
+margin-bottom: 3%;
+}
+button{
+    background-color: gold;
+    border-color: black;
+    border-radius: 100%;
+}

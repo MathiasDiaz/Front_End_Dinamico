@@ -1,0 +1,19 @@
+    <div id="proyectosepicos"></div>
+      <h1 class="text-white text-center intro">Proyectos 
+        <button data-bs-toggle="modal" data-bs-target="#agregarproyectos">
+          <i class="fa-solid fa-plus"></i></button></h1>
+          <div *ngFor="let pro of Proyectos">
+      <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+        <button data-bs-toggle="modal" data-bs-target="#editarproyectos" type="button" class="btn btn-warning">Editar</button>
+        <button data-bs-toggle="modal" data-bs-target="#borrarproyectos" type="button" class="btn btn-danger">Borrar</button>
+      </div>
+      <div class="card" style="width:20rem">
+        <a [href]="pro.url" target="_blank"><img [src]="pro.imagen" class="card-img-top" [alt]="pro.alt"></a>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">{{pro.titulo}}</h5>
+              <p class="card-text">Este portfolio es mi unico proyecto hasta ahora debido a que emepece este curso sin experiencia de nada</p>
+            </div>
+          </div>
+    <app-modal-proyectos></app-modal-proyectos>
+          <div class="footer"></div>

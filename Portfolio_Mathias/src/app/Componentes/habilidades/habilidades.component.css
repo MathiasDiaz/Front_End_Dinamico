@@ -1,0 +1,25 @@
+label{
+    color:white;
+}
+.text-white{
+    background-color: darkcyan;
+    border-width: 0.4ex;
+    border-style: solid;
+    border-color: gray;
+    margin-bottom: 3%;
+}
+.progress{
+    margin-right: 30%;
+    margin-bottom: 2%;
+    display: flex;
+}
+h1 button{
+    background-color: darkcyan;
+    color: aliceblue;
+    border: none;
+}
+button{
+    background-color: dodgerblue;
+    border: none;
+    color: white;
+}

@@ -1,0 +1,88 @@
+<div class="modal fade" id="agregarhabilidades" tabindex="-1" aria-labelledby="agregarhabilidades" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="agregarhabilidades">Agregar</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="form" (ngSubmit)="onEnviar($event)">
+              <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Nombre de la habilidad</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Habilidad o Tecnologia"formControlName="texto" [class.border-success]="textoV" [class.border-danger]="textoF">       
+                <p *ngIf="texto?.hasError('required')" class="error">
+                  Este campo es requerido
+              </p>
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Porcentaje</label>
+                <input type="url" class="form-control" id="formGroupExampleInput2" placeholder="Porcentaje de la Habilidad o Tecnologia" formControlName="texto1" [class.border-success]="textoV1" [class.border-danger]="textoF1">       
+                <p *ngIf="texto1?.hasError('required')" class="error">
+                  Este campo es requerido
+              </p>
+              </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-info">Agregar</button>
+        </div>
+        </form>
+    </div>
+  </div>
+  </div>
+  </div>
+  
+
+  <div class="modal fade" id="editarhabilidades" tabindex="-1" aria-labelledby="editarhabilidades" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="editarhabilidades">Editar</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="forma" (ngSubmit)="onEnviarPes($event)">
+              <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Editar habilidad</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Cambia el nombre de la habilidad" formControlName="texto4" [class.border-success]="textoV4" [class.border-danger]="textoF4">       
+                <p *ngIf="texto4?.hasError('required')" class="error">
+                  Este campo es requerido
+              </p>
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Editar Porcentaje</label>
+                <input type="url" class="form-control" id="formGroupExampleInput2" placeholder="Edita el Porcentaje de la Habilidad"formControlName="texto5" [class.border-success]="textoV5" [class.border-danger]="textoF5">       
+                <p *ngIf="texto5?.hasError('required')" class="error">
+                  Este campo es requerido
+              </p>
+              </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-info">Editar</button>
+        </div>
+        </form>
+    </div>
+  </div>
+  </div>
+  </div>
+  
+
+  
+<div class="modal fade" id="borrarhabilidades" tabindex="-1" aria-labelledby="borrarhabilidades" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="borrarhabilidades">Borrar</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+               <div class="col-sm-10">
+                <input type="text" readonly class="form-control-plaintext" id="staticEmail"> 
+              ¿Seguro que desea eliminar este elemento?
+              </div> 
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger">Borrar</button>
+        </div>
+        </form>
+    </div>
+  </div>
+  </div>
+</div>

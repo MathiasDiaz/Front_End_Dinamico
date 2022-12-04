@@ -1,0 +1,19 @@
+<!--Formacion academica-->
+<section>
+    <div id="Formacion-academica"></div>
+    <h1 class="text-white text-center intro">Formacion academica <button data-bs-toggle="modal" data-bs-target="#agregarformacion"><i class="fa-solid fa-plus"></i></button></h1>
+    <div *ngFor="let for of formacion"> 
+    <div class="btn-group" role="group" aria-label="Basic mixed styles example">  
+       <button data-bs-toggle="modal" data-bs-target="#editarformacion" type="button" class="btn btn-warning">Editar</button>
+      <button data-bs-toggle="modal" data-bs-target="#borrarformacion" type="button" class="btn btn-danger">Borrar</button>       
+    </div>
+      <div class="card" style="width:20rem">
+      <a [href]="for.url" target="_blank"><img [src]="for.imagen" class="card-img-top" [alt]="for.alt"></a>
+       <div class="card-body">  
+        <h5 class="card-title">{{for.titulo}}</h5>
+          <p class="card-text">{{for.descripcion}}</p>
+        </div>
+      </div>   
+    </div>
+      <app-modal-formacion></app-modal-formacion>  
+  </section>

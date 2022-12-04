@@ -1,0 +1,21 @@
+.text-white{
+    background-color: darkcyan;
+    border-width: 0.4ex;
+    border-style: solid;
+    border-color: gray;
+    margin-bottom: 3%;
+    }
+    .card{
+        margin-left: 3%;
+    margin-bottom:4%;
+    }
+    .btn-group{
+        margin-top: 10%;
+        float: right;
+    }
+    h1 button{
+        background-color: darkcyan;
+        color: aliceblue;
+        border: none;
+        margin-left: 0%;
+    }

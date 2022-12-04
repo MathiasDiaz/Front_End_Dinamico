@@ -1,0 +1,54 @@
+<div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="infoModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="infoModalLabel">Acerca de mi</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+    <form [formGroup]="form" (ngSubmit)="onEnviar($event)">
+      <div class="modal-body">
+          <div class="mb-9">
+            <label for="message-text" class="col-form-label">editar Texto</label>
+            <textarea class="form-control" id="message-text"formControlName="texto" [class.border-success]="textoV" [class.border-danger]="textoF"></textarea>   
+        </div>
+        <p *ngIf="texto?.hasError('required')" class="error">
+          Este campo es requerido
+      </p>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-info">Guardar Cambios
+        </button>
+      </div>
+    </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="modal fade" id="informacionModal" tabindex="-1" aria-labelledby="informacionModal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="informacionModal">Edad</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <form [formGroup]="form" (ngSubmit)="onEnviar($event)">
+      <div class="modal-body">
+          <div class="mb-9">
+            <label for="message-text" class="col-form-label">Editar</label>
+            <textarea class="form-control" id="message-text"formControlName="texto" [class.border-success]="textoV" [class.border-danger]="textoF"></textarea>   
+          </div>
+          <p *ngIf="texto?.hasError('required')" class="error">
+            Este campo es requerido
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-info">Guardar Cambios
+        </button>
+      </div>
+    </form>
+    </div>
+  </div>
+</div>

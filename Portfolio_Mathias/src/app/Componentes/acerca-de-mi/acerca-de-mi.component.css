@@ -1,0 +1,95 @@
+.informacion{
+ font-size: x-large;
+}
+.foto_1{
+    width:25rem;
+    height:25rem;
+    border-radius: 25rem;
+    border: 7px solid rgb(24, 82, 136);
+    display: flex;
+    }
+.encuadro{
+    display: flex;
+}
+.informacion{
+    text-align: left;
+    
+}
+.acerca_de_mi {
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+    text-align: justify;
+    font-style:oblique;
+    background-color: lightblue;
+    border-width: 0.9rem;
+    border-style: solid;
+    border-color: black;
+}
+.acerca_de_mi > .descripcion{
+    margin-top: 3ex;
+    }
+.text-white{
+background-color: darkcyan;
+border-width: 0.4ex;
+border-style: solid;
+border-color: gray;
+margin-bottom: 3%;
+}
+.button2{
+margin-top: -14rem;
+float:right;
+background-color: red;
+border-color: black;
+border-radius: 100%;
+}   
+.button1{
+    float: right;
+    background-color: gold;
+    margin-right: 4%;
+    margin-top: -14rem;
+    border-color: black;
+    border-radius: 100%;
+}
+li button{
+    background-color: gold;
+    margin-right: 4%;
+    border-color: black;
+    border-radius: 100%;
+}
+
+   @media screen and (max-width: 700px) {
+   .button2{ 
+    float: right;
+    margin-top: -10rem;
+    background-color: red;
+    border-color: black;
+    border-radius: 100%;
+}
+.foto_1{
+    width: 30%;
+    height: 20%;
+    border-radius: 100%;
+    border: 7px solid rgb(24, 82, 136);
+    display: flex;
+    }
+    .button1{
+        float: right;
+        background-color: gold;
+        margin-right: 7%;
+    }
+}
+@media screen and (max-width: 924px) {
+    .button2{ 
+        float: right;
+       margin-top: -14rem;
+        background-color: red;
+        border-color: black;
+        border-radius: 100%;
+    }
+    .button1{
+        float: right;
+        background-color: gold;
+        margin-right: 5%;
+    }
+}

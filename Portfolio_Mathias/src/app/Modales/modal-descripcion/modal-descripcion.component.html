@@ -1,0 +1,50 @@
+<div class="modal fade" id="fotoModalLabel" tabindex="-1" aria-labelledby="fotoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="fotoModalLabel">Editar Foto</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="form" (ngSubmit)="onEnviar($event)">
+                      <div class="mb-3">
+                    <label for="formFile" class="form-label"></label>
+                    <input class="form-control" type="file" id="formFile" formControlName="texto" [class.border-success]="textoV" [class.border-danger]="textoF">   
+                  <p *ngIf="texto?.hasError('required')" class="error">
+                    Este campo es requerido
+                </p>
+                      </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-primary">Editar</button>
+        </div>
+        </form>
+    </div>
+  </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="borrarfoto" tabindex="-1" aria-labelledby="borrarfoto" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="borrarfoto">Borrar Foto</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+               <div class="col-sm-10">
+                <input type="text" readonly class="form-control-plaintext" id="staticEmail"> 
+              ¿Seguro que desea eliminar la imagen?
+              </div> 
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger">Borrar</button>
+        </div>
+        </form>
+    </div>
+  </div>
+    </div>
+</div>
+
+

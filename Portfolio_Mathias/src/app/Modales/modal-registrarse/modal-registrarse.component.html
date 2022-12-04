@@ -1,0 +1,54 @@
+<div class="modal fade" id="registrarse" tabindex="-1" aria-labelledby="registrarse" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="registrarse">Registrarse</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form [formGroup]="form" (ngSubmit)="onEnviar($event)">
+                <div class="mb-3">
+                    <label for="exampleInpuText1" class="form-label"><p>Ingrese sus nombres y apellidos:</p></label>
+                    <input class="form-control" type="text" value="" aria-label="readonly input example" formControlName="texto" [class.border-success]="textoV" [class.border-danger]="textoF">  
+                    <p *ngIf="texto?.hasError('required')" class="error">
+                      Este campo es requerido
+                  </p>
+                 
+                 
+                    <label for="exampleInputEmail1" class="form-label"><p>Ingrese su email</p></label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" formControlName="email"
+                  [class.border-success]="Mailvalid" [class.border-danger]="MailInvalid">
+                  <div *ngIf="Mail?.errors">    
+                    <p *ngIf="Mail?.hasError('required')" class="error">
+                        El email es requerido.
+                    </p>
+                    <p *ngIf="Mail?.hasError('email')" class="error">
+                        El formato del email debe ser válido.
+                      </p>
+                </div>
+    
+      
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label"><p>Crear Contraseña</p></label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" formControlName="password" 
+                  [class.border-success]="Passwordvalid" [class.border-danger]="PasswordInvalid">
+                  <div *ngIf="Password?.errors  && Password?.touched">
+                    <p *ngIf="Password?.hasError('required')" class="error">
+                      El password es requerido.
+                    </p>
+                    <p *ngIf="Password?.errors?.['minlength']
+                " class="error">
+                      El password debe ser de 6 o más caracteres.
+                    </p>
+                  </div>
+                </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="submit" class="btn btn-primary">registrarse</button>
+        </div>
+        </form>
+    </div>
+  </div>
+    </div>
+</div>

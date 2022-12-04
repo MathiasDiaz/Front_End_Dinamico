@@ -1,0 +1,18 @@
+    <article class="articulo">
+  <a id="info"><h1 class="text-white text-center intro"> Mathias José Diaz</h1></a>
+     <div class="encuadro" *ngFor="let acercap of acerca"><img [src]=acercap.imagen alt="foto_mia" class="foto_1"></div>
+       <div class="icono-img">
+         <button class="button1" data-bs-toggle="modal" data-bs-target="#fotoModalLabel">
+        <i class="fa-sharp fa-solid fa-pencil"></i>
+        </button>
+          <button class="button2"data-bs-toggle="modal" data-bs-target="#borrarfoto">
+            <i class="fa-sharp fa-solid fa-trash"></i>
+            </button>
+       </div>
+    <app-modal-descripcion></app-modal-descripcion>
+          <div class="informacion"*ngFor="let acercap of acerca">  
+          <ul> 
+         <li>Tucumán-Argentina</li>
+         <li>{{acercap.edad}}<button  data-bs-toggle="modal" data-bs-target="#informacionModal"><i class="fa-sharp fa-solid fa-pencil"></i></button> </li>  
+      </ul>
+      </div>

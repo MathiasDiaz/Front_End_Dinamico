@@ -1,0 +1,151 @@
+{
+    "nombre":"Mathias",
+    "Apellido":"Diaz",
+
+    "acercademi":[
+        {
+            "id":1,
+    "descripcion":"Buen dia visitante, me presento me llamo Mathias Diaz, tengo 19 años, vivo en Argentina Tucumán. Esto es un portafolio web en el que estaré compartiendo mi formación academica en el camino de convertime en un programador web full stack. Para este camino estuve estudiando en el programa de formación Argentina programa impulsada por INTI(Intituto Nacional de Tecnologia Industrial), CESSI(Camara de la Industria Argentina del software) y el Ministerio de desarrollo Productivo de Argentina"
+
+        }
+    ],
+    
+    "acerca":[
+        {
+            "id":1,
+    "edad":"19 años",
+    "imagen":"../../../assets/img/Foto.jpg"
+        }
+    ],
+ "experiencia":[
+    {
+    "id":1,
+    "descripcion":"No tengo un trabajo fijo pero me pagaron varias veces para hacer trabajos en word ya sea cartas o trabajos escolares",
+    "titulo":"word",
+    "imagen":"../../../assets/img/Word.png",
+    "url":"#",
+    "alt":"Word_1"
+}                  
+],
+"formacion":[
+    {
+    "id":1,
+    "descripcion":"La primera etapa estuve aprendiendo introducción a la programación",
+    "titulo":"Argentina programa-Se Programar",
+    "imagen":"../../../assets/img/LogosArg.png",
+    "url":"https://seprogramarsso.inti.gob.ar/auth/realms/master/protocol/saml/clients/mumuki?SAMLRequest=fZFNT8MwDIb/Sm85tWlDtVXRWmlil0njsgEHLsgt3hYtHyVOED+fdGPSEIiLJduvH38tCIwe5TKGo93ie0QK2ZIIfVDO3jtL0aDfof9QAz5tNy07hjCS5Jxw9O7gwYAvlA2qOLi+AM8hkfgE5QNo3cNwYtkqUZWFCfkngMj9ZngEbYgboICeJ21wg9PfaK3QhpSMJp4Uy9arlr329awS/Rzy5i2Zel8OefLucoS9gBk22JTzJCWKuLYUwIaWiVKIvKpy0TxWQta1rMoXlj2jp/OsoihZ9mm0JTn1bVn0VjogRdKCQZJhkLvlw0YmoYTr2W5Lxv9rrmuxbjGp5Xk63132WvDb2MX7+aruCw==&SigAlg=http://www.w3.org/2001/04/xmldsig-more%2523rsa-sha256&Signature=ZjyLKfQuumH62EaddZc/B8mXfF7k2O4FmNtUAK8Ijm1DiB/3wnF4tABI/U+eDrTWc35GjkQoPxuinFSNvwDjvQeEn0wyIygqA1Pdyx/0oNR01hvPgFyoJhaA9vaI5Vv3rxnfLeg3gdzxAiC5bVNFC00SV1sRKPzSCNbNjUJk0o1VEgB2Pewzexc30U/0UpB4smBQiAmNmDJf5jxyEvkW5M1oTyJCqOrmR0/LNGJBuH8LdWdZKP9kn9hqlEOwWbfiA/2ZTK4+itFRCDUb1Us5BwjYutbgfkEfHgWZRYdRdK7cw8dOOIO5tsJvPwWxxd96LaEy541kcnodl94NG5NP+w==#S%C3%A9Programar%2016%20de%20marzo--Empez%C3%A1%20a%20cursar%20la%20primera%20etapa%20de%20Argentina%20Programa&utm_term=AP%20SP%2016DEMARZO%20-%20D3--7--none--80-90--ENVIO%20SIMPLE&embtrk=6b9gi-R-54311844-R-6c2en84-R-6c3fo74",
+    "alt":"ArPrograma2"
+},
+{
+    "id":2,
+    "descripcion":"Estuve aprendiendo tecnologias como: Html,Css y bootstrap. Las clases son asicronicas con material de lectura, evaluaciones, master class, foros y desafíos en sus numeros modulos",
+    "titulo":"Argentina programa-Segunda etapa",
+    "imagen":"../../../assets/img/LogosArg.png",
+    "url":"https://argentinaprograma.inti.gob.ar/login/index.php",
+    "alt":"ArPrograma1"
+}, 
+{
+    "id":3,
+    "descripcion":"Es una pequeña introducción a la programación, las clases son dictadas por coursera.",
+    "titulo":"Scratch-Coursera",
+    "imagen":"../../../assets/img/scratch.jpg",
+    "url":"https://es.coursera.org/learn/a-programar?utm_source=gg&utm_medium=sem&utm_campaign=95-BrandedSearch-Spanish-LATAM&utm_content=B2C&campaignid=12247707079&adgroupid=114147084941&device=c&keyword=coursera&matchtype=b&network=g&devicemodel=&adpostion=&creativeid=496323226698&hide_mobile_promo=&gclid=CjwKCAiAjs2bBhACEiwALTBWZdku2UY49Jc1sFN_D-V4TeDejYhIfqZR81-twW3Mja1UckHZ5j6X0hoCL_0QAvD_BwE",
+    "alt":"scratch-c"
+}               
+], 
+"proyectos":[
+    {
+    "id":1,
+    "descripcion":"Este portfolio es mi unico proyecto hasta ahora debido a que emepece este curso sin experiencia de nada",
+    "titulo":"Portfolio",
+    "imagen":"../../../assets/img/portafolio.jpg",
+    "url":"#",
+    "alt":"Img_Portfolio"
+}
+],
+"habilidades":[
+{
+    "id":1,
+    "titulo":"HTML",
+    "porcentaje":"52",
+    "color":"bg-warning"
+},
+{
+    "id":2,
+"titulo":"CSS",
+"porcentaje":"90",
+"color":"bg-danger"
+},
+{
+    "id":3,
+    "titulo":"ANGULAR",
+    "porcentaje":"50",
+    "color":"bg-dark"
+},
+{
+    "id":4,
+"titulo":"JAVA",
+"porcentaje":"20",
+"color":"bg-success"
+},
+{
+    "id":5,
+    "titulo":"COMUNICACION",
+    "porcentaje":"70",
+    "color":"bg-info"
+},
+{
+    "id":6,
+"titulo":"COMPAÑERISMO",
+"porcentaje":"55",
+"color":"bg-warning"
+}
+],
+"redes":[
+    {
+    "id":1,
+    "icono":"fa-brands fa-github",
+    "url":"https://github.com/MathiasDiaz"
+},
+{
+    "id":2,
+    "icono":"fa-brands fa-linkedin",
+    "url":"https://www.linkedin.com/in/mathias-diaz-29ba2b258/"
+},
+{
+    "id":3,
+    "icono":"fa-brands fa-whatsapp",
+    "url":"https://wa.me/5493816610487"
+}
+],
+"button":[
+    {
+    "id":1,
+    "nombre":"Experienca Laboral",
+    "url":"#experiencialaboral1"
+},
+{
+    "id":2,
+    "nombre":"Habilidades",
+    "url":"#Habilidadesmias"
+},
+{
+    "id":3,
+    "nombre":"Formacion academica",
+    "url":"#Formacion-academica"
+},
+  {  "id":4,
+    "nombre":"Proyectos",
+    "url":"#proyectosepicos"
+}
+],
+"imagenlogo":[
+    {
+    "id":1,
+    "imagen":"../../../assets/img/LogoNecesarios.png"
+}
+]
+}
+
+
+

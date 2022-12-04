@@ -1,0 +1,26 @@
+ <!--Seccion de mi experiencia laboral-->
+ <section>
+    <div id="experiencialaboral1"></div>
+      <h1 class="text-white text-center intro"><div id="experienca">Experincia laboral</div><button data-bs-toggle="modal" data-bs-target="#agregarexperiencia">
+        <i class="fa-solid fa-plus"></i></button></h1>
+      <div *ngFor="let lab of experiencia">
+      <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+        <button data-bs-toggle="modal" data-bs-target="#editarexperienciaModalLabel" type="button" class="btn btn-warning">Editar</button>
+        <button data-bs-toggle="modal" data-bs-target="#experienciaModalLabel" type="button" class="btn btn-danger">Borrar</button>
+        </div>  
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+           <a [href]="lab.url" target="_blank"> <img [src]="lab.imagen" class="img-fluid rounded-start" [alt]="lab.alt" ></a>
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">{{lab.titulo}}</h5>
+              <p class="card-text">{{lab.descripcion}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+      <app-modal-experencia></app-modal-experencia>
+    </section>
