@@ -8,7 +8,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item" *ngFor="let boton of butto">
-                <button><a [href]="boton.url">{{boton.nombre}}</a></button>
+                <button type="button"><a [href]="boton.url">{{boton.nombre}}</a></button>
               </li>
             </ul>
             <ul class="list-group list-group-horizontal" *ngFor="let redes of rede">
