@@ -16,7 +16,7 @@ ngOnInit(): void {
 
   this.datos.getDatos().subscribe(datas=>{
 
-    this.acerca=datas.acerca
+    this.acerca=datas.info
   }
   ) 
 }
