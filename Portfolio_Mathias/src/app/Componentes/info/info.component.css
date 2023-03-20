@@ -4,10 +4,10 @@
     margin-bottom: 5%;
     text-align: justify;
     font-style:oblique;
-    background-color: lightblue;
+    background-color: darkcyan;
     border-width: 0.9rem;
     border-style: solid;
-    border-color: black;
+    border-color: white;
 }
 .acerca_de_mi > .descripcion{
     margin-top: 3ex;
@@ -15,8 +15,8 @@
 .text-white{
 background-color: darkcyan;
 border-width: 0.4ex;
-border-style: solid;
 border-color: gray;
+border-radius: 9%;
 margin-bottom: 3%;
 }
 button{

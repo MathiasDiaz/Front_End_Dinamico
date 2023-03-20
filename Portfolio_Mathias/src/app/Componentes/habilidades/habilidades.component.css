@@ -19,7 +19,7 @@ h1 button{
     border: none;
 }
 button{
-    background-color: dodgerblue;
+    background-color: rgb(0, 0, 0);
     border: none;
     color: white;
 }

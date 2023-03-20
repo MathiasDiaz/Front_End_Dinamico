@@ -1,3 +1,13 @@
 .list-group-item{
     background-color: rgb(255, 255, 255);
 }
+a:link, a:visited,  a:hover, a:active
+{
+    color: #000000;
+    text-decoration: none;
+}
+button{
+    background-color: rgb(255, 255, 255);
+    border-radius: 9%;
+    border-color: grey;
+}

@@ -1,11 +1,12 @@
 .informacion{
  font-size: x-large;
+ color: white;
 }
 .foto_1{
     width:25rem;
     height:25rem;
     border-radius: 25rem;
-    border: 7px solid rgb(24, 82, 136);
+    border: 7px solid rgb(255, 255, 255);
     display: flex;
     }
 .encuadro{
@@ -22,9 +23,7 @@
     text-align: justify;
     font-style:oblique;
     background-color: lightblue;
-    border-width: 0.9rem;
-    border-style: solid;
-    border-color: black;
+    border-color: white;
 }
 .acerca_de_mi > .descripcion{
     margin-top: 3ex;
@@ -84,7 +83,7 @@ li button{
         float: right;
        margin-top: -14rem;
         background-color: red;
-        border-color: black;
+        border-color: white;
         border-radius: 100%;
     }
     .button1{

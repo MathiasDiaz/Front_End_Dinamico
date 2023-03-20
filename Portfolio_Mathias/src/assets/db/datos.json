@@ -126,14 +126,15 @@
 },
 {
     "id":2,
-    "nombre":"Habilidades",
-    "url":"#Habilidadesmias"
-},
-{
-    "id":3,
     "nombre":"Formacion academica",
     "url":"#Formacion-academica"
 },
+{
+    "id":3,
+    "nombre":"Habilidades",
+    "url":"#Habilidadesmias"
+},
+
   {  "id":4,
     "nombre":"Proyectos",
     "url":"#proyectosepicos"
